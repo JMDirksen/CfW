@@ -36,10 +36,9 @@ namespace CfW
         {
             using(StreamReader file = new StreamReader(Filename))
             {
-                string line;
                 while (!file.EndOfStream)
                 {
-                    line = file.ReadLine();
+                    string line = file.ReadLine();
                     Console.WriteLine(String.Format("{0} {1}", dt.ToString(), line));
                 }
             }
